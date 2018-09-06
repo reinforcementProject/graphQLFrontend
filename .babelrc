@@ -1,6 +1,5 @@
 {
 	"presets": [
-		"react","graphql-tag"
-	],
+		"react"],
 	"plugins":["transform-class-properties"]
 }

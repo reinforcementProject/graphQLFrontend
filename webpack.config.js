@@ -20,12 +20,12 @@ module.exports = {
 	devServer:{
 		port:3000,
 		contentBase: './client',
-		// proxy: {
-    //   "/auth": {
-		// 		changeOrigin: true,
-		// 		target:"http://127.0.0.1:8080",
-		// 	}
-		// }
+		proxy: {
+      "/graphql": {
+				changeOrigin: true,
+				target:"http://127.0.0.1:4000/graphql",
+			}
+		}
 	},
 		plugins:[
 			new CleanWebpackPlugin('build'),
